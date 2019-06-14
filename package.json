@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "serve": "npm run build && http-server -p 9999 ./",
+    "build": "node index.js"
+  },
+  "devDependencies": {
+    "ejs": "^2.6.1",
+    "http-server": "^0.11.1"
+  }
+}
