@@ -1,9 +1,11 @@
 {
   "scripts": {
+    "watch": "node watch.js",
     "serve": "npm run build && http-server -p 9999 ./",
     "build": "node index.js"
   },
   "devDependencies": {
+    "chokidar": "^3.0.1",
     "ejs": "^2.6.1",
     "http-server": "^0.11.1"
   }
