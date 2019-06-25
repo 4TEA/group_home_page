@@ -81,7 +81,7 @@
   <div class='board'>
     <% human.forEach(function(profile){ %>
     <div class="profile">
-      <a href="<%= profile.website || 'javascript:;' %>">
+      <a href="<%= profile.website || 'javascript:;' %>" target="_blank">
         <div class="profile__avatar" style="background-image: url(<%= profile.avator %>)"></div>
       </a>
       <div class="profile__info light">
