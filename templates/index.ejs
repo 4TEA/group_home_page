@@ -81,7 +81,9 @@
   <div class='board'>
     <% human.forEach(function(profile){ %>
     <div class="profile">
-      <div class="profile__avatar" style="background-image: url(<%= profile.avator %>)"></div>
+      <a href="<%= profile.website || 'javascript:;' %>">
+        <div class="profile__avatar" style="background-image: url(<%= profile.avator %>)"></div>
+      </a>
       <div class="profile__info light">
         <span><%= profile.nickname %></span>
         <span> <%= profile.city %> - <%= profile.field %></span>
